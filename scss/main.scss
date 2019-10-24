@@ -1,0 +1,27 @@
+// example overrides come before the global import(s)
+$border-radius: 0.2rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.1rem;
+$gray-600:#ccc;
+
+.card {
+    &:hover {
+        background:$gray-600;
+        opacity:0.9;
+    }
+}
+
+// required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// only importing what I need
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+
